@@ -132,7 +132,8 @@ int main()
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Registro de nomes\n"); //O "\t" da um espaço
 		printf("\t2 - Consulta de nomes\n");
-		printf("\t3 - Deletar nomes\n\n");
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção: ");
 		
 		scanf("%d", &opcao); //Aqui armazina a opção do usuário "scanf" escaneia a opção que o usuário coloca, para armazenar uma variável se usa "%d" do tipo inteiro e o "&" referencia a variável
@@ -151,6 +152,11 @@ int main()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado pro utilizar o sistema!\n");
+			return 0;// O "0" é pra quebrar laço, sistema etc... para sair do sistema
 			break;
 			
 			default://"default" faz com que caso a opção selecionada não for mapeada ela vai ele vai dar o que está na chaves
